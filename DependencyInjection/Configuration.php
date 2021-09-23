@@ -5,18 +5,19 @@ declare(strict_types=1);
 /*
  * This file is part of the DbalEnumTypeBundle package.
  *
- * (c) Wakeapp <https://wakeapp.ru>
+ * (c) MarfaTech <https://marfa-tech.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Wakeapp\Bundle\DbalEnumTypeBundle\DependencyInjection;
+namespace MarfaTech\Bundle\DbalEnumTypeBundle\DependencyInjection;
 
 use Closure;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
+
 use function is_dir;
 use function method_exists;
 use function sprintf;
@@ -41,13 +42,13 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('wakeapp_dbal_enum_type');
+        $treeBuilder = new TreeBuilder('marfatech_dbal_enum_type');
 
         if (method_exists($treeBuilder, 'getRootNode')) {
             $rootNode = $treeBuilder->getRootNode();
         } else {
             // BC layer for symfony/config 4.1 and older
-            $rootNode = $treeBuilder->root('wakeapp_dbal_enum_type');
+            $rootNode = $treeBuilder->root('marfatech_dbal_enum_type');
         }
 
         $rootNode

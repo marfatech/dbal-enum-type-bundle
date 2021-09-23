@@ -1,4 +1,4 @@
 services:
-    Wakeapp\Component\DbalEnumType\EventSubscriber\EnumEventSubscriber:
+    MarfaTech\Component\DbalEnumType\EventSubscriber\EnumEventSubscriber:
         tags:
             - { name: doctrine.event_subscriber }

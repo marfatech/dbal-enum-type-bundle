@@ -1,4 +1,7 @@
 ## [Unreleased]
+## Changed
+- [BC BREAK] Refactoring namespace to `MarfaTech`.
+- [BC BREAK] Renamed root config `wakeapp_dbal_enum_type` to `marfatech_dbal_enum_type`.
 
 ## [1.3.2] - 2021-03-02
 ### Added

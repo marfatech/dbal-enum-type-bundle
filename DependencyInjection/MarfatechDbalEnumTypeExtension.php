@@ -5,13 +5,13 @@ declare(strict_types=1);
 /*
  * This file is part of the DbalEnumTypeBundle package.
  *
- * (c) Wakeapp <https://wakeapp.ru>
+ * (c) MarfaTech <https://marfa-tech.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Wakeapp\Bundle\DbalEnumTypeBundle\DependencyInjection;
+namespace MarfaTech\Bundle\DbalEnumTypeBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -19,11 +19,11 @@ use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
 use Symfony\Component\DependencyInjection\Loader;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
-use Wakeapp\Component\DbalEnumType\Type\AbstractEnumType;
+use MarfaTech\Component\DbalEnumType\Type\AbstractEnumType;
 
-class WakeappDbalEnumTypeExtension extends Extension implements PrependExtensionInterface
+class MarfatechDbalEnumTypeExtension extends Extension implements PrependExtensionInterface
 {
-    public const PARAMETER_SOURCES = 'wakeapp_dbal_enum_type.source_directories';
+    public const PARAMETER_SOURCES = 'marfatech_dbal_enum_type.source_directories';
 
     /**
      * {@inheritdoc}
@@ -48,7 +48,7 @@ class WakeappDbalEnumTypeExtension extends Extension implements PrependExtension
     {
         $container->prependExtensionConfig('doctrine', [
             'dbal' => [
-                'driver_class' => 'Wakeapp\Component\DbalEnumType\Driver\PDOMySql\EnumAwareDriver',
+                'driver_class' => 'MarfaTech\Component\DbalEnumType\Driver\PDOMySql\EnumAwareDriver',
                 'types' => $this->getDbalEnumTypeClasses($container),
             ]
         ]);
@@ -89,16 +89,16 @@ class WakeappDbalEnumTypeExtension extends Extension implements PrependExtension
      */
     private function getFinder(ContainerBuilder $container): Finder
     {
-        $wakeappDbalEnumTypeConfigs = $container->getExtensionConfig('wakeapp_dbal_enum_type');
+        $marfaTechDbalEnumTypeConfigs = $container->getExtensionConfig('marfatech_dbal_enum_type');
 
         $sourceList = [];
 
-        foreach ($wakeappDbalEnumTypeConfigs as $wakeappDbalEnumTypeConfig) {
-            if (!isset($wakeappDbalEnumTypeConfig['source_directories'])) {
+        foreach ($marfaTechDbalEnumTypeConfigs as $marfaTechDbalEnumTypeConfig) {
+            if (!isset($marfaTechDbalEnumTypeConfig['source_directories'])) {
                 continue;
             }
 
-            $sourceList += $wakeappDbalEnumTypeConfig['source_directories'];
+            $sourceList += $marfaTechDbalEnumTypeConfig['source_directories'];
         }
 
         $projectDir = $container->getParameter('kernel.project_dir');
