@@ -14,7 +14,7 @@
         "symfony/dependency-injection": "~3.4||~4.0||~5.0",
         "symfony/finder":               "~3.4||~4.0||~5.0",
         "symfony/http-kernel":          "~3.4||~4.0||~5.0",
-        "marfatech/dbal-enum-type":     "dev-DEV-16"
+        "wakeapp/dbal-enum-type":     "dev-DEV-16"
     },
 
     "repositories": [
