@@ -14,7 +14,7 @@
         "symfony/dependency-injection": "~3.4||~4.0||~5.0",
         "symfony/finder":               "~3.4||~4.0||~5.0",
         "symfony/http-kernel":          "~3.4||~4.0||~5.0",
-        "wakeapp/dbal-enum-type":     "dev-DEV-16"
+        "marfatech/dbal-enum-type":     "^2.0"
     },
 
     "repositories": [
@@ -25,11 +25,11 @@
     ],
 
     "conflict": {
-        "wakeapp/enumer-bundle": "<1.0"
+        "marfatech/enumer-bundle": "<1.0"
     },
 
     "suggest": {
-        "wakeapp/enumer-bundle": "Provides possibility to avoid reflection on the runtime"
+        "marfatech/enumer-bundle": "Provides possibility to avoid reflection on the runtime"
     },
 
     "autoload": {
