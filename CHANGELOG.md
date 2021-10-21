@@ -1,4 +1,6 @@
 ## [Unreleased]
+
+## [2.0.0] - 2021-10-21
 ### Added
 - Installed `marfatech/dbal-enum-type` with pattern version `^2.0`.
 ### Changed
