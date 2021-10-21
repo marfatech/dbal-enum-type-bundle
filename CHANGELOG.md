@@ -1,4 +1,13 @@
 ## [Unreleased]
+### Added
+- Installed `marfatech/dbal-enum-type` with pattern version `^2.0`.
+### Changed
+- Updated `php` with pattern version `~7.4||~8.0`.
+- Updated composer name `wakeapp/dbal-enum-type-bundle` to `marfatech/dbal-enum-type-bundle`.
+- [BC BREAK] Refactoring namespace to `MarfaTech`.
+- [BC BREAK] Renamed root config `wakeapp_dbal_enum_type` to `marfatech_dbal_enum_type`.
+### Removed
+- Removed vendor requirement `wakeapp/dbal-enum-type`.
 
 ## [1.3.2] - 2021-03-02
 ### Added

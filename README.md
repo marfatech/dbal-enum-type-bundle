@@ -1,13 +1,13 @@
 Dbal Enum Type Bundle
 =====================
 
-[![Latest Stable Version](https://poser.pugx.org/wakeapp/dbal-enum-type-bundle/v/stable)](https://packagist.org/packages/wakeapp/dbal-enum-type-bundle)
-[![Total Downloads](https://poser.pugx.org/wakeapp/dbal-enum-type-bundle/downloads)](https://packagist.org/packages/wakeapp/dbal-enum-type-bundle)
+[![Latest Stable Version](https://poser.pugx.org/marfatech/dbal-enum-type-bundle/v/stable)](https://packagist.org/packages/marfatech/dbal-enum-type-bundle)
+[![Total Downloads](https://poser.pugx.org/marfatech/dbal-enum-type-bundle/downloads)](https://packagist.org/packages/marfatech/dbal-enum-type-bundle)
 
 Введение
 --------
 
-Бандл предоставляет интеграцию с компонентом [DbalEnumType](https://github.com/wakeapp/dbal-enum-type).
+Бандл предоставляет интеграцию с компонентом [DbalEnumType](https://github.com/marfatech/dbal-enum-type).
 Автоматически регистрирует новые типы доктрины, которые наследуются от `AbstractEnumType`.
 
 Установка
@@ -19,7 +19,7 @@ Dbal Enum Type Bundle
 стабильной версии этого бандла:
 
 ```bash
-    composer require wakeapp/dbal-enum-type-bundle
+    composer require marfatech/dbal-enum-type-bundle
 ```
 *Эта команда подразумевает что [Composer](https://getcomposer.org) установлен и доступен глобально.*
 
@@ -40,7 +40,7 @@ class AppKernel extends Kernel
         $bundles = [
             // ...
 
-            new Wakeapp\Bundle\DbalEnumTypeBundle\WakeappDbalEnumTypeBundle(),
+            new MarfaTech\Bundle\DbalEnumTypeBundle\MarfatechDbalEnumTypeBundle(),
         ];
 
         return $bundles;
@@ -56,7 +56,7 @@ class AppKernel extends Kernel
 Чтобы начать использовать бандл предварительная конфигурация **не** требуется и имеет следующее значение по умолчанию:
 
 ```yaml
-wakeapp_enumer:
+marfatech_enumer:
     # список директорий, в которых будет происходить поиск классов-наследников AbstractEnumType
     source_directories:
         - 'src'
@@ -65,7 +65,7 @@ wakeapp_enumer:
 Использование
 -------------
 
-С примерами использования можно ознакомиться в документации [DbalEnumType](https://github.com/wakeapp/dbal-enum-type).
+С примерами использования можно ознакомиться в документации [DbalEnumType](https://github.com/marfatech/dbal-enum-type).
 
 Лицензия
 --------
