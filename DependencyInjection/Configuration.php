@@ -42,13 +42,13 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('marfatech_dbal_enum_type');
+        $treeBuilder = new TreeBuilder('marfa_tech_dbal_enum_type');
 
         if (method_exists($treeBuilder, 'getRootNode')) {
             $rootNode = $treeBuilder->getRootNode();
         } else {
             // BC layer for symfony/config 4.1 and older
-            $rootNode = $treeBuilder->root('marfatech_dbal_enum_type');
+            $rootNode = $treeBuilder->root('marfa_tech_dbal_enum_type');
         }
 
         $rootNode

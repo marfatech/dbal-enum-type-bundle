@@ -21,9 +21,9 @@ use Symfony\Component\Finder\Finder;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use MarfaTech\Component\DbalEnumType\Type\AbstractEnumType;
 
-class MarfatechDbalEnumTypeExtension extends Extension implements PrependExtensionInterface
+class MarfaTechDbalEnumTypeExtension extends Extension implements PrependExtensionInterface
 {
-    public const PARAMETER_SOURCES = 'marfatech_dbal_enum_type.source_directories';
+    public const PARAMETER_SOURCES = 'marfa_tech_dbal_enum_type.source_directories';
 
     /**
      * {@inheritdoc}
@@ -89,7 +89,7 @@ class MarfatechDbalEnumTypeExtension extends Extension implements PrependExtensi
      */
     private function getFinder(ContainerBuilder $container): Finder
     {
-        $marfaTechDbalEnumTypeConfigs = $container->getExtensionConfig('marfatech_dbal_enum_type');
+        $marfaTechDbalEnumTypeConfigs = $container->getExtensionConfig('marfa_tech_dbal_enum_type');
 
         $sourceList = [];
 

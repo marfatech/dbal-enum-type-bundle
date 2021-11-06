@@ -15,6 +15,6 @@ namespace MarfaTech\Bundle\DbalEnumTypeBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class MarfatechDbalEnumTypeBundle extends Bundle
+class MarfaTechDbalEnumTypeBundle extends Bundle
 {
 }

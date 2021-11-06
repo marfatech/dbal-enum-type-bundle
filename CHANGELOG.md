@@ -1,4 +1,7 @@
 ## [Unreleased]
+### Changed
+- Renamed prefix bundle and extension names `Marfatech` to `MarfaTech`.
+- Renamed root config `marfatech_dbal_enum_type` to `marfa_tech_dbal_enum_type`.
 
 ## [2.0.0] - 2021-10-21
 ### Added

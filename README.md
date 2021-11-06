@@ -40,7 +40,7 @@ class AppKernel extends Kernel
         $bundles = [
             // ...
 
-            new MarfaTech\Bundle\DbalEnumTypeBundle\MarfatechDbalEnumTypeBundle(),
+            new MarfaTech\Bundle\DbalEnumTypeBundle\MarfaTechDbalEnumTypeBundle(),
         ];
 
         return $bundles;
@@ -56,7 +56,7 @@ class AppKernel extends Kernel
 Чтобы начать использовать бандл предварительная конфигурация **не** требуется и имеет следующее значение по умолчанию:
 
 ```yaml
-marfatech_enumer:
+marfa_tech_enumer:
     # список директорий, в которых будет происходить поиск классов-наследников AbstractEnumType
     source_directories:
         - 'src'
