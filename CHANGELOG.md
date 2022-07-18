@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [2.0.2] - 2022-07-18
+### Changed
+- Added support doctrine/doctrine-bundle ^2.7
+
 ## [2.0.1] - 2021-11-08
 ### Changed
 - Renamed prefix bundle and extension names `Marfatech` to `MarfaTech`.
