@@ -3,6 +3,8 @@
 ## [2.0.2] - 2022-07-18
 ### Changed
 - Added support doctrine/doctrine-bundle ^2.7
+### Added
+- Added support Symfony ~6.0
 
 ## [2.0.1] - 2021-11-08
 ### Changed
