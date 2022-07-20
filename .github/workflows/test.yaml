@@ -23,5 +23,6 @@ jobs:
       - name: Composer install and lock symfony
         run: |
           export SYMFONY_REQUIRE=${{ matrix.symfony-versions }} \
-          && composer install symfony/flex --no-plugins --no-scripts \
           && composer install --prefer-dist --no-progress \
+          && composer require symfony/flex \
+          && composer update symfony/flex --no-plugins --no-scripts
