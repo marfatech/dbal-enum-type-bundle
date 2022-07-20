@@ -27,7 +27,3 @@ jobs:
           && composer install --prefer-dist --no-progress \
           && composer config --no-plugins allow-plugins.symfony/flex true \
           && composer update symfony/flex --no-plugins --no-scripts \
-
-      - name: Run tests
-        run: |
-          ./vendor/bin/phpunit
