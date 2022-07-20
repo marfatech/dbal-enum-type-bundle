@@ -28,6 +28,10 @@
         "marfatech/enumer-bundle": "<1.0"
     },
 
+    "config": {
+        "symfony/flex": true
+    },
+
     "suggest": {
         "marfatech/enumer-bundle": "Provides possibility to avoid reflection on the runtime"
     },
