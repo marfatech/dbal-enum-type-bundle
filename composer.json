@@ -30,7 +30,7 @@
     ],
 
     "config": {
-        "symfony/flex": false
+        "symfony/flex": true
     },
 
     "conflict": {
