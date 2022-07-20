@@ -1,4 +1,4 @@
-name: PHPUnit
+name: Test
 
 on: [pull_request]
 
@@ -25,5 +25,3 @@ jobs:
           export SYMFONY_REQUIRE=${{ matrix.symfony-versions }} \
           && composer global require --no-progress --no-scripts --no-plugins \
           && composer install --prefer-dist --no-progress \
-          && composer config --no-plugins allow-plugins.symfony/flex true \
-          && composer update symfony/flex --no-plugins --no-scripts \
