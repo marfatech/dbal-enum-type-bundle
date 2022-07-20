@@ -30,14 +30,9 @@
         }
     ],
 
-    "config": {
-        "allow-plugins": {
-            "symfony/flex": true
-        }
-    },
-
     "conflict": {
-        "marfatech/enumer-bundle": "<1.0"
+        "marfatech/enumer-bundle": "<1.0",
+        "symfony/symfony": "*"
     },
 
     "suggest": {
