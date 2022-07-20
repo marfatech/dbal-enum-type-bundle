@@ -24,4 +24,5 @@ jobs:
         run: |
           export SYMFONY_REQUIRE=${{ matrix.symfony-versions }} \
           && composer global require --no-progress --no-scripts --no-plugins \
-          && composer install --prefer-dist --no-progress
+          && composer install --prefer-dist --no-progress \
+          && composer update symfony/flex --no-plugins --no-scripts
