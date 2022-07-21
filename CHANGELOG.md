@@ -7,7 +7,6 @@
 - Remove support of `symfony/*` with version `~3.4`.
 ### Added
 - Added support `Symfony` with version `~6.0`.
-- Added support `symfony/flex` with version `^2.2`.
 
 ## [2.0.1] - 2021-11-08
 ### Changed
