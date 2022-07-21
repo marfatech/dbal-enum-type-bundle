@@ -1,4 +1,12 @@
 ## [Unreleased]
+### Changed
+- Updated support `doctrine/doctrine-bundle` with pattern version `^2.7`.
+- Updated support `doctrine/dbal` with pattern version `~2.12`.
+- Updated support `php` with pattern version `~8.0`.
+- Updated support `symfony/*` with pattern version `~4.4||~5.4||~6.0`.
+- Remove support of `symfony/*` with version `~3.4`.
+### Added
+- Added support `Symfony` with version `~6.0`.
 
 ## [2.0.1] - 2021-11-08
 ### Changed

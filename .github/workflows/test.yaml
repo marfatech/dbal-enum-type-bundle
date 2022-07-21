@@ -1,0 +1,28 @@
+name: Test
+
+on: [pull_request]
+
+jobs:
+  run:
+    runs-on: 'ubuntu-latest'
+    strategy:
+      matrix:
+        php-versions: ['8.0', '8.1']
+        symfony-versions: ['~4.4', '~5.4', '~6.0']
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+          tools: composer
+        env:
+          COMPOSER_TOKEN: ${{ secrets.COMPOSER_TOKEN }}
+
+      - name: Composer install on php ${{ matrix.php-versions }} and symfony ${{ matrix.symfony-versions }}
+        uses: ramsey/composer-install@v2
+        env:
+          SYMFONY_REQUIRE: ${{ matrix.symfony-versions }}
