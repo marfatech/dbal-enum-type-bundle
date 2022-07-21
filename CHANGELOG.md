@@ -1,4 +1,6 @@
 ## [Unreleased]
+
+## [2.1.0] - 2022-07-21
 ### Changed
 - Updated support `doctrine/doctrine-bundle` with pattern version `^2.7`.
 - Updated support `doctrine/dbal` with pattern version `~2.12`.
